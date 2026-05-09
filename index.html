@@ -1,0 +1,1361 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0B1733" />
+<meta name="format-detection" content="telephone=no" />
+
+<title>韩国 KOSDAQ 资本市场观察 | 面向中国 AI 硬件公司的研究简报</title>
+<meta name="description" content="韩国 KOSDAQ 市场的活跃度、上市规则与估值水平：2025 年公募收益历史第二、技术特례扩容至 AI、바이오비쥬等案例的实际表现。" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="韩国 KOSDAQ 资本市场观察｜活跃度·规则·估值" />
+<meta property="og:description" content="2025 KOSDAQ 公募首日均收益 142.9%、年度收益 82.6% 创历史第二高；技术特례 2026 扩容至 AI；바이오비쥬上市首日 +188% 案例分析。" />
+<meta property="og:image" content="./assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="韩国 KOSDAQ 上市机会简报｜AI 硬件公司专属" />
+<meta name="twitter:description" content="2026 起 KOSDAQ 技术特례扩展至 AI 行业。中国 AI 录音笔公司的资本路径新选项。" />
+<meta name="twitter:image" content="./assets/og-image.png" />
+
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Noto Sans SC', 'Inter', 'system-ui', '-apple-system', 'PingFang SC', 'Microsoft YaHei', 'sans-serif'],
+          mono: ['ui-monospace', 'SF Mono', 'Menlo', 'Consolas', 'monospace'],
+        },
+        colors: {
+          ink: {
+            900: '#0B1733',
+            800: '#13224A',
+            700: '#1E3168',
+            600: '#2A437F',
+          },
+          coral: {
+            500: '#F97357',
+            600: '#E85A3D',
+          },
+          gold: {
+            500: '#D4A24C',
+          },
+          paper: '#FAFAF7',
+        },
+        boxShadow: {
+          card: '0 1px 2px rgba(11,23,51,0.04), 0 8px 24px rgba(11,23,51,0.06)',
+          glow: '0 0 0 1px rgba(249,115,87,0.4), 0 8px 32px rgba(249,115,87,0.18)',
+        }
+      }
+    }
+  };
+</script>
+
+<style>
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { font-family: 'Noto Sans SC','Inter',system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif; font-feature-settings: "tnum" 1; background: #FAFAF7; color: #0B1733; }
+  .num { font-family: 'Inter','Noto Sans SC',sans-serif; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+  .display { font-weight: 900; letter-spacing: -0.025em; line-height: 1.05; }
+  .section-num { font-family: 'Inter',monospace; font-feature-settings: "tnum" 1; letter-spacing: 0.1em; }
+
+  /* Subtle background pattern */
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(11,23,51,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(11,23,51,0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  /* Bar chart bars */
+  .bar-fill { transform-origin: left center; animation: barGrow 1.2s cubic-bezier(0.2,0.8,0.2,1) both; }
+  @keyframes barGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+  /* Sticky-nav active state */
+  .nav-link.active { color: #F97357; }
+  .nav-link.active::after { width: 100%; }
+  .nav-link::after { content:''; display:block; height:2px; width:0; background: #F97357; transition: width .25s ease; }
+
+  /* Card hover */
+  .card-hover { transition: transform .25s ease, box-shadow .25s ease; }
+  @media (hover:hover) { .card-hover:hover { transform: translateY(-2px); box-shadow: 0 1px 2px rgba(11,23,51,0.06), 0 16px 40px rgba(11,23,51,0.10); } }
+
+  /* Pull-quote vertical bar */
+  .quote-bar { box-shadow: inset 4px 0 0 #F97357; }
+
+  /* Hide scroll-bar on horizontal scroll containers */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Print styles */
+  @media print {
+    nav, .no-print { display: none !important; }
+    section { break-inside: avoid; page-break-inside: avoid; }
+  }
+
+  /* Reveal-on-scroll */
+  .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* Diagonal stripe accent */
+  .stripe-accent {
+    background: linear-gradient(135deg, rgba(249,115,87,0.08) 0%, rgba(249,115,87,0) 60%);
+  }
+</style>
+</head>
+<body class="antialiased text-ink-900 bg-paper">
+
+<!-- ======================== STICKY TOP NAV ======================== -->
+<nav class="sticky top-0 z-40 backdrop-blur-md bg-paper/85 border-b border-ink-900/8 no-print">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+    <a href="#hero" class="flex items-center gap-2 font-bold text-ink-900">
+      <span class="inline-block w-2.5 h-2.5 rounded-full bg-coral-500"></span>
+      <span class="text-sm sm:text-base">韩国 KOSDAQ 上市简报</span>
+    </a>
+    <div class="hidden md:flex gap-5 text-sm text-ink-700">
+      <a href="#why-now" class="nav-link hover:text-coral-500 transition-colors">三个观察</a>
+      <a href="#tracks" class="nav-link hover:text-coral-500 transition-colors">上市路径</a>
+      <a href="#ecommerce" class="nav-link hover:text-coral-500 transition-colors">电商市场</a>
+      <a href="#comparables" class="nav-link hover:text-coral-500 transition-colors">对标公司</a>
+      <a href="#case" class="nav-link hover:text-coral-500 transition-colors font-semibold">바이오비쥬 案例</a>
+      <a href="#timeline" class="nav-link hover:text-coral-500 transition-colors">时间表</a>
+    </div>
+    <a href="#cta" class="text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full bg-ink-900 text-paper hover:bg-coral-500 transition-colors">
+      下一步 →
+    </a>
+  </div>
+</nav>
+
+<!-- ======================== 1. HERO ======================== -->
+<section id="hero" class="relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-50 pointer-events-none"></div>
+  <div class="absolute -top-32 -right-32 w-[480px] h-[480px] rounded-full bg-coral-500/10 blur-3xl pointer-events-none"></div>
+  <div class="absolute top-40 -left-40 w-[400px] h-[400px] rounded-full bg-ink-700/10 blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 pt-12 sm:pt-20 pb-16 sm:pb-28">
+    <div class="inline-flex items-center gap-2 mb-6 sm:mb-8 px-3 py-1.5 rounded-full bg-ink-900/5 text-ink-700 text-xs sm:text-sm">
+      <span class="w-1.5 h-1.5 rounded-full bg-coral-500"></span>
+      <span class="font-medium">市场观察</span>
+      <span class="text-ink-700/60">|</span>
+      <span>2025–2026 韩国 KOSDAQ</span>
+    </div>
+
+    <h1 class="display text-4xl sm:text-6xl md:text-7xl text-ink-900 max-w-4xl">
+      韩国 <span class="text-coral-500">KOSDAQ</span>：<br/>
+      一个活跃、规则友好、<br/>
+      估值水平较高的资本市场。
+    </h1>
+
+    <p class="mt-6 sm:mt-8 max-w-2xl text-lg sm:text-xl text-ink-700 leading-relaxed">
+      2025 年 KOSDAQ 新股年内公募收益 <span class="num font-semibold text-ink-900">82.6%</span>，
+      为<strong class="text-ink-900">历史第二高</strong>；11 月单月 16 家公司挂牌、首日收盘均涨幅 <span class="num font-semibold text-ink-900">142.9%</span>；
+      技术特례上市 2026 起扩容至 AI/能源/航天行业。
+    </p>
+
+    <div class="mt-10 sm:mt-12 grid sm:grid-cols-3 gap-4 sm:gap-6">
+      <div class="p-5 rounded-2xl bg-white border border-ink-900/8 shadow-card">
+        <div class="text-xs section-num text-coral-500 mb-2">01 / 市场活跃度</div>
+        <div class="font-semibold text-ink-900">2025 IPO 收益历史第二高</div>
+        <div class="text-sm text-ink-700 mt-1.5">月均挂牌 10+ 家，首日均收益 100%+</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-white border border-ink-900/8 shadow-card">
+        <div class="text-xs section-num text-coral-500 mb-2">02 / 上市规则</div>
+        <div class="font-semibold text-ink-900">技术特례扩容至 AI</div>
+        <div class="text-sm text-ink-700 mt-1.5">未盈利即可申请，自기자본 KRW 10 亿门槛</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-white border border-ink-900/8 shadow-card">
+        <div class="text-xs section-num text-coral-500 mb-2">03 / 估值水平</div>
+        <div class="font-semibold text-ink-900">AI/医美科技 P/S 8–15×</div>
+        <div class="text-sm text-ink-700 mt-1.5">바이오비쥬上市首日盘中 +188%（参见案例分析）</div>
+      </div>
+    </div>
+
+    <div class="mt-12 sm:mt-16 flex flex-wrap gap-4">
+      <a href="#why-now" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-ink-900 text-paper font-semibold hover:bg-coral-500 transition-colors">
+        查看完整简报
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+      <a href="#case" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-ink-900/15 text-ink-900 font-semibold hover:border-coral-500 hover:text-coral-500 transition-colors">
+        直接看 바이오비쥬 案例
+      </a>
+    </div>
+
+    <p class="mt-12 text-xs text-ink-700/60 max-w-2xl">
+      本文为对韩国 KOSDAQ 资本市场的研究简报，整理 2025–2026 公开数据。所有数据来源见页脚。
+    </p>
+  </div>
+</section>
+
+<!-- ======================== 2. WHY NOW ======================== -->
+<section id="why-now" class="relative bg-ink-900 text-paper overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-[0.06] pointer-events-none"></div>
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <div class="flex items-baseline gap-4 mb-3">
+      <span class="section-num text-coral-500 text-sm">02</span>
+      <span class="text-paper/60 text-sm">Why Now</span>
+    </div>
+    <h2 class="display text-3xl sm:text-5xl mb-4">三个观察：活跃 · 规则 · 估值。</h2>
+    <p class="text-paper/70 max-w-2xl text-base sm:text-lg leading-relaxed">
+      把"是不是该考虑韩国"拆开，本质上是三件事：市场有多活跃、上市规则是否友好、上市后估值能去到多高。
+    </p>
+
+    <div class="mt-12 grid md:grid-cols-3 gap-5">
+      <!-- Card 1: Activity -->
+      <article class="card-hover p-7 rounded-2xl bg-ink-800 border border-paper/10">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-10 rounded-full bg-coral-500/20 flex items-center justify-center">
+            <span class="text-coral-500 font-bold">①</span>
+          </div>
+          <div class="text-xs section-num text-paper/50">市场活跃度</div>
+        </div>
+        <h3 class="text-xl font-bold mb-3">KOSDAQ 是 2025 全球最活跃的 IPO 市场之一</h3>
+        <ul class="space-y-2 text-paper/80 text-sm leading-relaxed">
+          <li>• 2025 年公募收益累计 <span class="num font-semibold text-coral-500">82.6%</span>（历史第二高，仅次 2023 年 83.8%）</li>
+          <li>• 11 月单月 <span class="num font-semibold text-coral-500">16 家</span>挂牌；首日开盘均涨幅 <span class="num">174.6%</span>、收盘均涨幅 <span class="num">142.9%</span></li>
+          <li>• 全年挂牌总量预计 <span class="num">120+</span> 家</li>
+          <li>• 2025 KOSDAQ 综合指数突破 <span class="num">~6,000</span> 点</li>
+        </ul>
+        <p class="mt-4 pt-4 border-t border-paper/10 text-xs text-paper/60">
+          数据来源：유진투자증권 IPO Market Monthly 2025-12 / KIND
+        </p>
+      </article>
+
+      <!-- Card 2: Rules -->
+      <article class="card-hover p-7 rounded-2xl bg-ink-800 border border-paper/10">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-10 rounded-full bg-coral-500/20 flex items-center justify-center">
+            <span class="text-coral-500 font-bold">②</span>
+          </div>
+          <div class="text-xs section-num text-paper/50">上市规则</div>
+        </div>
+        <h3 class="text-xl font-bold mb-3">技术特례：未盈利公司亦可上市</h3>
+        <ul class="space-y-2 text-paper/80 text-sm leading-relaxed">
+          <li>• <span class="num font-semibold text-coral-500">2026 起</span>：技术特례覆盖范围正式从生物医药扩展至 <strong class="text-coral-500">AI、能源、航天</strong></li>
+          <li>• 财务门槛低：自기자본 <span class="num">KRW 10 亿</span>（约 $750K）或市值 <span class="num">KRW 90 亿</span></li>
+          <li>• 外国发행人需 2 家专业机构均给出 A 级以上技术评级</li>
+          <li>• 平均时长 15–18 个月（详见第 04 节）</li>
+        </ul>
+        <p class="mt-4 pt-4 border-t border-paper/10 text-xs text-paper/60">
+          数据来源：KRX KIND《2025 코스닥 상장심사 이해와 실무》
+        </p>
+      </article>
+
+      <!-- Card 3: Valuation -->
+      <article class="card-hover p-7 rounded-2xl bg-ink-800 border border-paper/10 ring-1 ring-coral-500/30">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-10 rounded-full bg-coral-500 flex items-center justify-center">
+            <span class="text-paper font-bold">③</span>
+          </div>
+          <div class="text-xs section-num text-coral-500">估值水平</div>
+        </div>
+        <h3 class="text-xl font-bold mb-3">概念股上市估值偏高，案例支撑充分</h3>
+        <ul class="space-y-2 text-paper/80 text-sm leading-relaxed">
+          <li>• AI/科技板块当前 P/S 倍数 <span class="num font-semibold text-coral-500">8–15×</span></li>
+          <li>• 医美/科技消费品上市首日普遍超公模价 <span class="num">100%+</span></li>
+          <li>• 案例：바이오비쥬（2025-05 上市）首日盘中 <span class="num font-semibold text-coral-500">+187.9%</span>、首日收盘 <span class="num">+102%</span></li>
+          <li>• 案例：Lunit（医疗 AI）上市后市值跃至 <span class="num">$1.2B+</span> Unicorn</li>
+        </ul>
+        <p class="mt-4 pt-4 border-t border-coral-500/30 text-sm text-paper/85">
+          相关具体案例与股价分析见第 09 节。
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 3. CAPITAL MARKETS ======================== -->
+<section id="markets" class="relative bg-paper">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <div class="flex items-baseline gap-4 mb-3">
+      <span class="section-num text-coral-500 text-sm">03</span>
+      <span class="text-ink-700 text-sm">Capital Markets at a Glance</span>
+    </div>
+    <h2 class="display text-3xl sm:text-5xl mb-4">韩国资本市场速览</h2>
+    <p class="text-ink-700 max-w-2xl text-base sm:text-lg leading-relaxed">
+      韩国交易所（KRX）旗下三层结构。中国科技公司的目标，几乎都在 <span class="font-semibold text-ink-900">KOSDAQ</span>。
+    </p>
+
+    <!-- 3-tier table -->
+    <div class="mt-10 overflow-x-auto no-scrollbar">
+      <table class="w-full min-w-[640px] border-collapse text-sm sm:text-base">
+        <thead>
+          <tr class="border-b-2 border-ink-900">
+            <th class="text-left p-4 font-semibold text-ink-700"></th>
+            <th class="text-left p-4 font-semibold text-ink-900">KOSPI<span class="text-xs font-normal text-ink-700 ml-2">主板</span></th>
+            <th class="text-left p-4 font-semibold text-coral-500 bg-coral-500/5">KOSDAQ<span class="text-xs font-normal text-ink-700 ml-2">创业板</span></th>
+            <th class="text-left p-4 font-semibold text-ink-900">KONEX<span class="text-xs font-normal text-ink-700 ml-2">中小</span></th>
+          </tr>
+        </thead>
+        <tbody class="text-ink-900">
+          <tr class="border-b border-ink-900/8">
+            <td class="p-4 text-ink-700">类比</td>
+            <td class="p-4">NYSE</td>
+            <td class="p-4 bg-coral-500/5 font-semibold">Nasdaq</td>
+            <td class="p-4">OTC</td>
+          </tr>
+          <tr class="border-b border-ink-900/8">
+            <td class="p-4 text-ink-700">上市公司数</td>
+            <td class="p-4 num">~830</td>
+            <td class="p-4 bg-coral-500/5 num font-semibold">~1,700</td>
+            <td class="p-4 num">~120</td>
+          </tr>
+          <tr class="border-b border-ink-900/8">
+            <td class="p-4 text-ink-700">总市值</td>
+            <td class="p-4 num">KRW 2,400+ 万亿</td>
+            <td class="p-4 bg-coral-500/5 num font-semibold">KRW 400+ 万亿</td>
+            <td class="p-4 num">KRW 5 万亿</td>
+          </tr>
+          <tr class="border-b border-ink-900/8">
+            <td class="p-4 text-ink-700">主要行业</td>
+            <td class="p-4">大型制造、金融、化工</td>
+            <td class="p-4 bg-coral-500/5 font-semibold">科技、AI、生物、文创</td>
+            <td class="p-4">中小成长</td>
+          </tr>
+          <tr>
+            <td class="p-4 text-ink-700">代表公司</td>
+            <td class="p-4">三星电子、LG、现代</td>
+            <td class="p-4 bg-coral-500/5 font-semibold">Selvas AI、Saltlux、Lunit、HLB</td>
+            <td class="p-4">小型新创</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 4-dimension international comparison -->
+    <h3 class="mt-16 text-2xl sm:text-3xl font-bold text-ink-900">为什么是 KOSDAQ，而不是其他选项？</h3>
+    <p class="mt-2 text-ink-700">四维对比：上市周期 / 估值水平 / 再融资便利 / 流动性</p>
+
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- KOSDAQ -->
+      <div class="p-6 rounded-2xl bg-ink-900 text-paper shadow-glow">
+        <div class="flex items-center justify-between mb-4">
+          <span class="font-bold text-lg">KOSDAQ</span>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-coral-500 text-paper font-semibold">推荐</span>
+        </div>
+        <dl class="space-y-3 text-sm">
+          <div class="flex justify-between"><dt class="text-paper/70">上市周期</dt><dd class="font-semibold">12–18 月</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">AI 估值（P/S）</dt><dd class="font-semibold text-coral-500">8–15×</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">再融资</dt><dd class="font-semibold">★★★★★</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">流动性</dt><dd class="font-semibold">★★★★</dd></div>
+        </dl>
+      </div>
+      <!-- 港股 18C -->
+      <div class="p-6 rounded-2xl bg-white border border-ink-900/10">
+        <div class="font-bold text-lg mb-4 text-ink-900">港股 18C</div>
+        <dl class="space-y-3 text-sm text-ink-900">
+          <div class="flex justify-between"><dt class="text-ink-700">上市周期</dt><dd>18–24 月</dd></div>
+          <div class="flex justify-between"><dt class="text-ink-700">AI 估值（P/S）</dt><dd>4–8×</dd></div>
+          <div class="flex justify-between"><dt class="text-ink-700">再融资</dt><dd>★★★</dd></div>
+          <div class="flex justify-between"><dt class="text-ink-700">流动性</dt><dd>★★★</dd></div>
+        </dl>
+      </div>
+      <!-- 科创板 -->
+      <div class="p-6 rounded-2xl bg-white border border-ink-900/10">
+        <div class="font-bold text-lg mb-4 text-ink-900">A 股科创板</div>
+        <dl class="space-y-3 text-sm text-ink-900">
+          <div class="flex justify-between"><dt class="text-ink-700">上市周期</dt><dd>24–36 月</dd></div>
+          <div class="flex justify-between"><dt class="text-ink-700">AI 估值（P/S）</dt><dd>10–20×</dd></div>
+          <div class="flex justify-between"><dt class="text-ink-700">再融资</dt><dd>★★</dd></div>
+          <div class="flex justify-between"><dt class="text-ink-700">流动性</dt><dd>★★★★★</dd></div>
+        </dl>
+        <p class="mt-3 pt-3 border-t border-ink-900/10 text-xs text-ink-700">门槛高、排队久、外资退出受限</p>
+      </div>
+      <!-- Nasdaq -->
+      <div class="p-6 rounded-2xl bg-white border border-ink-900/10">
+        <div class="font-bold text-lg mb-4 text-ink-900">美股 Nasdaq</div>
+        <dl class="space-y-3 text-sm text-ink-900">
+          <div class="flex justify-between"><dt class="text-ink-700">上市周期</dt><dd>12–24 月</dd></div>
+          <div class="flex justify-between"><dt class="text-ink-700">AI 估值（P/S）</dt><dd>10–25×</dd></div>
+          <div class="flex justify-between"><dt class="text-ink-700">再融资</dt><dd>★★★★★</dd></div>
+          <div class="flex justify-between"><dt class="text-ink-700">流动性</dt><dd>★★★★★</dd></div>
+        </dl>
+        <p class="mt-3 pt-3 border-t border-ink-900/10 text-xs text-ink-700">中概股审计监管、PCAOB 风险</p>
+      </div>
+    </div>
+    <p class="mt-6 text-xs text-ink-700/70">注：估值倍数为同行业典型区间，非保证。具体估值依公司基本面与上市时点窗口而定。</p>
+  </div>
+</section>
+
+<!-- ======================== 4. LISTING TRACKS ======================== -->
+<section id="tracks" class="relative bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <div class="flex items-baseline gap-4 mb-3">
+      <span class="section-num text-coral-500 text-sm">04</span>
+      <span class="text-ink-700 text-sm">Listing Tracks</span>
+    </div>
+    <h2 class="display text-3xl sm:text-5xl mb-4">韩国 IPO 上市路径</h2>
+    <p class="text-ink-700 max-w-2xl text-base sm:text-lg leading-relaxed">
+      KOSDAQ 提供 4 条主路径，对未盈利的科技公司都有制度安排。
+    </p>
+
+    <!-- Process flow -->
+    <div class="mt-10 sm:mt-12">
+      <h3 class="text-sm section-num text-coral-500 mb-4">通用流程（6 步）</h3>
+      <div class="overflow-x-auto no-scrollbar">
+        <div class="flex items-stretch gap-2 min-w-[760px]">
+          <div class="flex-1 p-4 rounded-xl bg-ink-900/5 border border-ink-900/8">
+            <div class="text-xs section-num text-ink-700 mb-1">STEP 1</div>
+            <div class="font-semibold text-sm">尽调与重组</div>
+            <div class="text-xs text-ink-700 mt-1">2-4 月</div>
+          </div>
+          <div class="self-center text-coral-500">→</div>
+          <div class="flex-1 p-4 rounded-xl bg-ink-900/5 border border-ink-900/8">
+            <div class="text-xs section-num text-ink-700 mb-1">STEP 2</div>
+            <div class="font-semibold text-sm">主承销商签约</div>
+            <div class="text-xs text-ink-700 mt-1">1 月</div>
+          </div>
+          <div class="self-center text-coral-500">→</div>
+          <div class="flex-1 p-4 rounded-xl bg-ink-900/5 border border-ink-900/8">
+            <div class="text-xs section-num text-ink-700 mb-1">STEP 3</div>
+            <div class="font-semibold text-sm">技术评估</div>
+            <div class="text-xs text-ink-700 mt-1">3-4 月</div>
+          </div>
+          <div class="self-center text-coral-500">→</div>
+          <div class="flex-1 p-4 rounded-xl bg-ink-900/5 border border-ink-900/8">
+            <div class="text-xs section-num text-ink-700 mb-1">STEP 4</div>
+            <div class="font-semibold text-sm">KRX 预审请求</div>
+            <div class="text-xs text-ink-700 mt-1">3-6 月</div>
+          </div>
+          <div class="self-center text-coral-500">→</div>
+          <div class="flex-1 p-4 rounded-xl bg-ink-900/5 border border-ink-900/8">
+            <div class="text-xs section-num text-ink-700 mb-1">STEP 5</div>
+            <div class="font-semibold text-sm">证券申报+路演</div>
+            <div class="text-xs text-ink-700 mt-1">2 月</div>
+          </div>
+          <div class="self-center text-coral-500">→</div>
+          <div class="flex-1 p-4 rounded-xl bg-coral-500/10 border border-coral-500/30">
+            <div class="text-xs section-num text-coral-500 mb-1">STEP 6</div>
+            <div class="font-semibold text-sm">公开发行+上市</div>
+            <div class="text-xs text-coral-500 mt-1 font-semibold">挂牌</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 tracks -->
+    <h3 class="mt-16 text-2xl sm:text-3xl font-bold text-ink-900">4 条路径对比</h3>
+    <div class="mt-8 grid md:grid-cols-2 gap-5">
+
+      <!-- Track 1: 일반요건 -->
+      <article class="p-6 rounded-2xl bg-paper border border-ink-900/10">
+        <div class="flex items-center justify-between mb-4">
+          <h4 class="text-xl font-bold">一般요건 上市</h4>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-ink-900/10 text-ink-700">最稳路径</span>
+        </div>
+        <p class="text-sm text-ink-700 mb-4">通过盈利+营收的硬指标考核。最经典的 IPO 路径。</p>
+        <dl class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">盈利要求</dt><dd class="font-semibold">需有营业利润</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">营收门槛</dt><dd class="font-semibold num">KRW 100 亿+</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">市值要求</dt><dd class="font-semibold num">KRW 300 亿+</dd></div>
+          <div class="flex justify-between py-1.5"><dt class="text-ink-700">平均时长</dt><dd class="font-semibold">12–15 月</dd></div>
+        </dl>
+        <p class="mt-4 pt-4 border-t border-ink-900/10 text-xs text-ink-700"><strong class="text-ink-900">适合：</strong>ARR $50M+ 且 EBITDA 转正的成熟公司</p>
+      </article>
+
+      <!-- Track 2: 기술특례 -->
+      <article class="p-6 rounded-2xl bg-ink-900 text-paper shadow-glow relative">
+        <div class="absolute -top-3 left-6 px-3 py-1 rounded-full bg-coral-500 text-paper text-xs font-bold">2026 扩容至 AI</div>
+        <div class="flex items-center justify-between mb-4 mt-2">
+          <h4 class="text-xl font-bold">技术特례 (기술특례)</h4>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-coral-500/20 text-coral-500">最常用路径</span>
+        </div>
+        <p class="text-sm text-paper/80 mb-4">通过技术评级取代盈利要求。2025 年新挂牌 KOSDAQ 公司中，<strong class="text-coral-500">超过 40% 走的是技术特례</strong>。</p>
+        <dl class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-paper/15 py-1.5"><dt class="text-paper/70">盈利要求</dt><dd class="font-semibold text-coral-500">无</dd></div>
+          <div class="flex justify-between border-b border-paper/15 py-1.5"><dt class="text-paper/70">技术评级（外企）</dt><dd class="font-semibold">2 家机构均 A 以上</dd></div>
+          <div class="flex justify-between border-b border-paper/15 py-1.5"><dt class="text-paper/70">财务门槛</dt><dd class="font-semibold num">自기자본 KRW 10 亿 或 市值 KRW 90 亿</dd></div>
+          <div class="flex justify-between py-1.5"><dt class="text-paper/70">平均时长</dt><dd class="font-semibold">15–18 月</dd></div>
+        </dl>
+        <p class="mt-4 pt-4 border-t border-paper/15 text-xs text-paper/80"><strong class="text-coral-500">典型适用：</strong>未盈利或刚转正、技术壁垒清晰、ARR $20–80M 区间的科技/医美/AI 公司</p>
+      </article>
+
+      <!-- Track 3: 성장성특례 -->
+      <article class="p-6 rounded-2xl bg-paper border border-ink-900/10">
+        <div class="flex items-center justify-between mb-4">
+          <h4 class="text-xl font-bold">성장성특례</h4>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-ink-900/10 text-ink-700">承销商推荐</span>
+        </div>
+        <p class="text-sm text-ink-700 mb-4">由主承销商单独推荐，证券公司承担风险。审核更聚焦"成长性"。</p>
+        <dl class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">技术评估</dt><dd class="font-semibold">免</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">承销商责任</dt><dd class="font-semibold">需 6 个月 put-back 选项</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">市值要求</dt><dd class="font-semibold num">KRW 90 亿+</dd></div>
+          <div class="flex justify-between py-1.5"><dt class="text-ink-700">平均时长</dt><dd class="font-semibold">12–15 月</dd></div>
+        </dl>
+        <p class="mt-4 pt-4 border-t border-ink-900/10 text-xs text-ink-700"><strong class="text-ink-900">适合：</strong>有强势承销商背书、商业化已起量的公司</p>
+      </article>
+
+      <!-- Track 4: SPAC -->
+      <article class="p-6 rounded-2xl bg-paper border border-ink-900/10">
+        <div class="flex items-center justify-between mb-4">
+          <h4 class="text-xl font-bold">SPAC 합병</h4>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-ink-900/10 text-ink-700">最快</span>
+        </div>
+        <p class="text-sm text-ink-700 mb-4">与已上市 SPAC 壳合并完成上市。融资规模相对较小。</p>
+        <dl class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">盈利要求</dt><dd class="font-semibold">无</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">技术评估</dt><dd class="font-semibold">免</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">融资规模</dt><dd class="font-semibold num">KRW 50–300 亿（典型）</dd></div>
+          <div class="flex justify-between py-1.5"><dt class="text-ink-700">平均时长</dt><dd class="font-semibold text-coral-500">6–9 月</dd></div>
+        </dl>
+        <p class="mt-4 pt-4 border-t border-ink-900/10 text-xs text-ink-700"><strong class="text-ink-900">适合：</strong>追求速度、融资规模适中、不期待 IPO 高溢价的公司</p>
+      </article>
+
+    </div>
+
+    <p class="mt-8 text-xs text-ink-700/70">数据来源：KRX KIND《2025 코스닥 상장심사 이해와 실무》及 2026 制度改革通报。具体条款以 KRX 最新公告为准。</p>
+  </div>
+</section>
+
+<!-- ======================== 5. RECOMMENDATION ======================== -->
+<section id="recommendation" class="relative bg-paper stripe-accent">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <div class="flex items-baseline gap-4 mb-3">
+      <span class="section-num text-coral-500 text-sm">05</span>
+      <span class="text-ink-700 text-sm">Path Mapping</span>
+    </div>
+    <h2 class="display text-3xl sm:text-5xl mb-4">不同阶段对应的上市路径</h2>
+    <p class="text-ink-700 max-w-2xl text-base sm:text-lg leading-relaxed">
+      KOSDAQ 给科技公司的 4 条路径并不互斥。下面是按公司发展阶段做的常见对应关系——仅供参考。
+    </p>
+
+    <div class="mt-12 space-y-4">
+      <!-- IF block 1 -->
+      <div class="grid md:grid-cols-[1fr_auto_1fr] gap-4 items-stretch">
+        <div class="p-6 rounded-2xl bg-white border border-ink-900/10">
+          <div class="text-xs section-num text-ink-700 mb-2">情境 1 / 已盈利</div>
+          <div class="font-bold text-lg text-ink-900">ARR &gt; $50M 且 EBITDA 已转正</div>
+          <p class="text-sm text-ink-700 mt-2">财务报表稳健、可持续盈利</p>
+        </div>
+        <div class="self-center text-coral-500 font-bold text-xl text-center">→</div>
+        <div class="p-6 rounded-2xl bg-ink-900/5 border-l-4 border-ink-900">
+          <div class="text-xs section-num text-ink-900 mb-2">常见路径</div>
+          <div class="font-bold text-lg text-ink-900">一般요건 上市</div>
+          <p class="text-sm text-ink-700 mt-2">硬指标考核，审核确定性较高，平均 12–15 个月</p>
+        </div>
+      </div>
+
+      <!-- IF block 2 (highlighted as most common) -->
+      <div class="grid md:grid-cols-[1fr_auto_1fr] gap-4 items-stretch">
+        <div class="p-6 rounded-2xl bg-coral-500/10 border-2 border-coral-500/40">
+          <div class="text-xs section-num text-coral-500 mb-2">情境 2 / 成长期</div>
+          <div class="font-bold text-lg text-ink-900">ARR $20–50M、未盈利或刚转正、技术壁垒清晰</div>
+          <p class="text-sm text-ink-700 mt-2">硬件 + AI/算法 + 数据闭环 / 医美材料 / 生物医药</p>
+        </div>
+        <div class="self-center text-coral-500 font-bold text-xl text-center">→</div>
+        <div class="p-6 rounded-2xl bg-coral-500 text-paper">
+          <div class="text-xs section-num text-paper/80 mb-2">常见路径</div>
+          <div class="font-bold text-lg">技术特례（기술특례상장）</div>
+          <p class="text-sm text-paper/90 mt-2">2025 KOSDAQ 新挂牌公司中，超过 40% 选择此路径</p>
+        </div>
+      </div>
+
+      <!-- IF block 3 -->
+      <div class="grid md:grid-cols-[1fr_auto_1fr] gap-4 items-stretch">
+        <div class="p-6 rounded-2xl bg-white border border-ink-900/10">
+          <div class="text-xs section-num text-ink-700 mb-2">情境 3 / 速度优先</div>
+          <div class="font-bold text-lg text-ink-900">12 个月内挂牌、对融资规模要求中等</div>
+          <p class="text-sm text-ink-700 mt-2">已有战略投资者背书</p>
+        </div>
+        <div class="self-center text-coral-500 font-bold text-xl text-center">→</div>
+        <div class="p-6 rounded-2xl bg-ink-900/5 border-l-4 border-ink-900">
+          <div class="text-xs section-num text-ink-900 mb-2">常见路径</div>
+          <div class="font-bold text-lg text-ink-900">KOSDAQ SPAC 合并</div>
+          <p class="text-sm text-ink-700 mt-2">6–9 个月可挂牌，融资规模典型 KRW 50–300 亿</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Neutral observation -->
+    <div class="mt-12 p-8 rounded-3xl bg-ink-900 text-paper quote-bar">
+      <p class="text-sm section-num text-coral-500 mb-3">OBSERVATION</p>
+      <p class="display text-2xl sm:text-3xl leading-tight">
+        2025 KOSDAQ 新挂牌公司中，<br/>
+        <span class="text-coral-500">超过 40%</span> 通过技术特례路径上市。
+      </p>
+      <p class="mt-4 text-paper/80 text-base">
+        2026 起技术特례范围正式从生物医药扩展至 AI、能源、航天行业。这意味着对应行业的成长期公司在 KOSDAQ 有了更清晰的制度路径——具体是否合适，仍需结合公司的财务、技术、股东结构单独评估。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 6. E-COMMERCE MARKET ======================== -->
+<section id="ecommerce" class="relative bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <div class="flex items-baseline gap-4 mb-3">
+      <span class="section-num text-coral-500 text-sm">06</span>
+      <span class="text-ink-700 text-sm">E-commerce Market</span>
+    </div>
+    <h2 class="display text-3xl sm:text-5xl mb-4">韩国电商市场规模</h2>
+    <p class="text-ink-700 max-w-2xl text-base sm:text-lg leading-relaxed">
+      上市地不只是融资地——韩国是 AI 硬件公司值得做生意的真实市场。
+    </p>
+
+    <!-- Big stats -->
+    <div class="mt-10 grid sm:grid-cols-3 gap-4">
+      <div class="p-6 rounded-2xl bg-ink-900 text-paper">
+        <div class="text-xs section-num text-coral-500 mb-2">市场总盘 2025E</div>
+        <div class="display text-4xl sm:text-5xl text-coral-500">$268B</div>
+        <p class="text-sm text-paper/80 mt-2">全球 Top 5 电商市场</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-paper border border-ink-900/10">
+        <div class="text-xs section-num text-ink-700 mb-2">渗透率</div>
+        <div class="display text-4xl sm:text-5xl text-ink-900 num">35%+</div>
+        <p class="text-sm text-ink-700 mt-2">零售总额占比 / 全球第二</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-paper border border-ink-900/10">
+        <div class="text-xs section-num text-ink-700 mb-2">中国跨境消费 2024</div>
+        <div class="display text-4xl sm:text-5xl text-ink-900"><span class="num">$3.1B</span></div>
+        <p class="text-sm text-coral-500 mt-2 font-semibold">YoY +84%</p>
+      </div>
+    </div>
+
+    <!-- Bar chart: MAU -->
+    <h3 class="mt-16 text-xl sm:text-2xl font-bold text-ink-900">主要平台月活用户（MAU，2025）</h3>
+    <p class="text-sm text-ink-700 mt-1">单位：百万人</p>
+
+    <div class="mt-6 space-y-3">
+      <!-- Coupang -->
+      <div>
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-sm font-semibold">Coupang</span>
+          <span class="text-sm num font-semibold text-ink-900">33.3 M</span>
+        </div>
+        <div class="h-8 bg-ink-900/5 rounded-full overflow-hidden">
+          <div class="bar-fill h-full bg-ink-900 rounded-full" style="width: 100%"></div>
+        </div>
+      </div>
+      <!-- Naver -->
+      <div>
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-sm font-semibold">Naver Shopping</span>
+          <span class="text-sm num font-semibold text-ink-900">~30.0 M</span>
+        </div>
+        <div class="h-8 bg-ink-900/5 rounded-full overflow-hidden">
+          <div class="bar-fill h-full bg-ink-700 rounded-full" style="width: 90%"></div>
+        </div>
+      </div>
+      <!-- AliExpress -->
+      <div>
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-sm font-semibold">AliExpress <span class="text-xs px-1.5 py-0.5 ml-1 rounded bg-coral-500/15 text-coral-500 font-medium">中国</span></span>
+          <span class="text-sm num font-semibold text-ink-900">8.6 M</span>
+        </div>
+        <div class="h-8 bg-ink-900/5 rounded-full overflow-hidden">
+          <div class="bar-fill h-full bg-coral-500 rounded-full" style="width: 26%"></div>
+        </div>
+      </div>
+      <!-- Temu -->
+      <div>
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-sm font-semibold">Temu <span class="text-xs px-1.5 py-0.5 ml-1 rounded bg-coral-500/15 text-coral-500 font-medium">中国</span></span>
+          <span class="text-sm num font-semibold text-ink-900">8.0 M</span>
+        </div>
+        <div class="h-8 bg-ink-900/5 rounded-full overflow-hidden">
+          <div class="bar-fill h-full bg-coral-500 rounded-full" style="width: 24%"></div>
+        </div>
+      </div>
+      <!-- 11st -->
+      <div>
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-sm font-semibold">11st</span>
+          <span class="text-sm num font-semibold text-ink-700">~7.5 M</span>
+        </div>
+        <div class="h-8 bg-ink-900/5 rounded-full overflow-hidden">
+          <div class="bar-fill h-full bg-ink-900/40 rounded-full" style="width: 22%"></div>
+        </div>
+      </div>
+      <!-- G-Market -->
+      <div>
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-sm font-semibold">G-Market</span>
+          <span class="text-sm num font-semibold text-ink-700">~5.2 M</span>
+        </div>
+        <div class="h-8 bg-ink-900/5 rounded-full overflow-hidden">
+          <div class="bar-fill h-full bg-ink-900/40 rounded-full" style="width: 16%"></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="mt-6 text-xs text-ink-700/70">数据来源：The Korea Herald / Mordor Intelligence / 2025 Q1 月活快照。Coupang + Naver 合计约 65% 的电商使用频次。</p>
+
+    <!-- Insight box -->
+    <div class="mt-10 p-6 rounded-2xl bg-coral-500/8 border-l-4 border-coral-500">
+      <p class="text-xs section-num text-coral-500 mb-2">INSIGHT</p>
+      <p class="text-base sm:text-lg text-ink-900 leading-relaxed">
+        中国电商平台已经把"中国制造"带进了韩国家庭。<br/>
+        但<strong class="text-coral-500">"中国 AI 硬件品牌"</strong>这一空白，仍待人填补。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 7. OPPORTUNITY ======================== -->
+<section id="opportunity" class="relative bg-paper">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <div class="flex items-baseline gap-4 mb-3">
+      <span class="section-num text-coral-500 text-sm">07</span>
+      <span class="text-ink-700 text-sm">Opportunity</span>
+    </div>
+    <h2 class="display text-3xl sm:text-5xl mb-4">中国 AI 硬件在韩国的机会</h2>
+    <p class="text-ink-700 max-w-2xl text-base sm:text-lg leading-relaxed">
+      四个具体切入点，加上必须正视的三个挑战。
+    </p>
+
+    <!-- 4 opportunity cards -->
+    <div class="mt-10 grid md:grid-cols-2 gap-5">
+      <article class="card-hover p-7 rounded-2xl bg-white border border-ink-900/10">
+        <div class="text-xs section-num text-coral-500 mb-3">机会 #1</div>
+        <h3 class="text-xl font-bold mb-3">数码硬件在 Coupang Rocket 高增长</h3>
+        <p class="text-sm text-ink-700 leading-relaxed">
+          Coupang Rocket Delivery（火箭速达）的电子配件类目，2024 年 GMV 同比 +30%+。AI 录音笔进入"专业人士礼品"和"职场效率工具"细分，TAM 仍在扩张。
+        </p>
+      </article>
+
+      <article class="card-hover p-7 rounded-2xl bg-white border border-ink-900/10">
+        <div class="text-xs section-num text-coral-500 mb-3">机会 #2</div>
+        <h3 class="text-xl font-bold mb-3">AI 录音笔 B2B 空白市场</h3>
+        <p class="text-sm text-ink-700 leading-relaxed">
+          韩国法律、医疗、新闻行业对"会议/访谈记录"需求强烈，但目前韩国本土厂商以企业 SaaS 为主，硬件层面没有 dominant player。Plaud 已在韩国小幅渗透——空间仍然很大。
+        </p>
+      </article>
+
+      <article class="card-hover p-7 rounded-2xl bg-white border border-ink-900/10">
+        <div class="text-xs section-num text-coral-500 mb-3">机会 #3</div>
+        <h3 class="text-xl font-bold mb-3">中国制造 + 韩国品牌化</h3>
+        <p class="text-sm text-ink-700 leading-relaxed">
+          可借鉴 Anker、小米的"中国研发制造、海外品牌运营"模型。在韩设立子公司＋本地团队＋韩文 UI 优化，能显著拉高品牌溢价（参考 Anker 在韩 Coupang 的 ARPU）。
+        </p>
+      </article>
+
+      <article class="card-hover p-7 rounded-2xl bg-white border border-ink-900/10">
+        <div class="text-xs section-num text-coral-500 mb-3">机会 #4</div>
+        <h3 class="text-xl font-bold mb-3">本地化即护城河</h3>
+        <p class="text-sm text-ink-700 leading-relaxed">
+          韩文 ASR 准确率 + 个人信息保护法（PIPA）合规 + 本地数据中心——这些都是中国出海玩家的痛点，但一旦做到，反过来形成进入壁垒，本土对手也很难短期复制。
+        </p>
+      </article>
+    </div>
+
+    <!-- Risks -->
+    <h3 class="mt-16 text-xl sm:text-2xl font-bold text-ink-900">同时必须正视的挑战</h3>
+    <div class="mt-6 grid sm:grid-cols-3 gap-4">
+      <div class="p-5 rounded-xl bg-ink-900/5 border-l-4 border-ink-900/40">
+        <div class="font-semibold text-ink-900 mb-1">韩文 LLM 准确率</div>
+        <p class="text-sm text-ink-700">中文 ASR 模型直接迁移至韩文有 5-15% 准确率差距；需要本地数据 + fine-tune。</p>
+      </div>
+      <div class="p-5 rounded-xl bg-ink-900/5 border-l-4 border-ink-900/40">
+        <div class="font-semibold text-ink-900 mb-1">PIPA + 数据本地化</div>
+        <p class="text-sm text-ink-700">个人信息保护法（PIPA）对录音内容跨境传输有严格限制；最稳路径是数据存在韩国本地。</p>
+      </div>
+      <div class="p-5 rounded-xl bg-ink-900/5 border-l-4 border-ink-900/40">
+        <div class="font-semibold text-ink-900 mb-1">本土巨头反应</div>
+        <p class="text-sm text-ink-700">Naver / Kakao 已布局 AI 助手，未来可能延伸到硬件；窗口期 2-3 年。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 8. COMPARABLES ======================== -->
+<section id="comparables" class="relative bg-ink-900 text-paper overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-[0.06] pointer-events-none"></div>
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <div class="flex items-baseline gap-4 mb-3">
+      <span class="section-num text-coral-500 text-sm">08</span>
+      <span class="text-paper/60 text-sm">Comparables</span>
+    </div>
+    <h2 class="display text-3xl sm:text-5xl mb-4">KOSDAQ 上的 AI 对标公司</h2>
+    <p class="text-paper/70 max-w-2xl text-base sm:text-lg leading-relaxed">
+      看看一批"语音/AI"公司在 KOSDAQ 现在值多少钱。这就是你上市后的估值锚定。
+    </p>
+
+    <!-- Comparable cards -->
+    <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <article class="card-hover p-6 rounded-2xl bg-ink-800 border border-paper/10 ring-1 ring-coral-500/30">
+        <div class="flex items-center justify-between mb-3">
+          <div class="font-bold text-lg">Selvas AI</div>
+          <span class="text-xs px-2 py-0.5 rounded bg-coral-500/20 text-coral-500 num">108860</span>
+        </div>
+        <div class="text-xs text-paper/60 mb-3">语音识别 + TTS + 文字识别 / 韩国老牌 AI 公司</div>
+        <dl class="space-y-2 text-sm">
+          <div class="flex justify-between"><dt class="text-paper/70">市值（2026）</dt><dd class="num font-bold text-coral-500">≈ KRW 3,240 亿</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">折合 USD</dt><dd class="num font-semibold">≈ $240M</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">上市路径</dt><dd class="font-semibold">技术特례</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">业务相关度</dt><dd class="font-semibold">★★★★★</dd></div>
+        </dl>
+        <p class="mt-3 pt-3 border-t border-paper/10 text-xs text-paper/70">
+          最直接对标——做语音/ASR 技术的 KOSDAQ 标杆。
+        </p>
+      </article>
+
+      <article class="card-hover p-6 rounded-2xl bg-ink-800 border border-paper/10">
+        <div class="flex items-center justify-between mb-3">
+          <div class="font-bold text-lg">Saltlux</div>
+          <span class="text-xs px-2 py-0.5 rounded bg-paper/10 text-paper/70 num">304100</span>
+        </div>
+        <div class="text-xs text-paper/60 mb-3">NLP + 大数据 + AI 平台</div>
+        <dl class="space-y-2 text-sm">
+          <div class="flex justify-between"><dt class="text-paper/70">市值（2026）</dt><dd class="num font-bold">≈ KRW 3,360 亿</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">折合 USD</dt><dd class="num font-semibold">≈ $250M</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">上市路径</dt><dd class="font-semibold">技术特례</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">业务相关度</dt><dd class="font-semibold">★★★★</dd></div>
+        </dl>
+        <p class="mt-3 pt-3 border-t border-paper/10 text-xs text-paper/70">
+          NLP 软件公司，可类比"AI 录音笔的转录/总结模块"价值。
+        </p>
+      </article>
+
+      <article class="card-hover p-6 rounded-2xl bg-ink-800 border border-paper/10">
+        <div class="flex items-center justify-between mb-3">
+          <div class="font-bold text-lg">Konan Technology</div>
+          <span class="text-xs px-2 py-0.5 rounded bg-paper/10 text-paper/70 num">402030</span>
+        </div>
+        <div class="text-xs text-paper/60 mb-3">企业搜索 + 视觉 AI + 对话系统</div>
+        <dl class="space-y-2 text-sm">
+          <div class="flex justify-between"><dt class="text-paper/70">上市年份</dt><dd class="num font-semibold">2022</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">上市路径</dt><dd class="font-semibold">技术特례</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">首日涨幅</dt><dd class="num font-semibold text-coral-500">~+30%</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">业务相关度</dt><dd class="font-semibold">★★★</dd></div>
+        </dl>
+        <p class="mt-3 pt-3 border-t border-paper/10 text-xs text-paper/70">
+          技术特례+ 路演成功的 AI 软件公司案例。
+        </p>
+      </article>
+
+      <article class="card-hover p-6 rounded-2xl bg-ink-800 border border-paper/10">
+        <div class="flex items-center justify-between mb-3">
+          <div class="font-bold text-lg">Lunit</div>
+          <span class="text-xs px-2 py-0.5 rounded bg-paper/10 text-paper/70 num">328130</span>
+        </div>
+        <div class="text-xs text-paper/60 mb-3">医学影像 AI / 已 Unicorn</div>
+        <dl class="space-y-2 text-sm">
+          <div class="flex justify-between"><dt class="text-paper/70">市值（2026）</dt><dd class="num font-bold">KRW 1.6+ 万亿</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">折合 USD</dt><dd class="num font-semibold">$1.2B+</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">上市路径</dt><dd class="font-semibold">技术特례</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">业务相关度</dt><dd class="font-semibold">★★</dd></div>
+        </dl>
+        <p class="mt-3 pt-3 border-t border-paper/10 text-xs text-paper/70">
+          技术特례成功的 Unicorn 标杆——证明赛道天花板。
+        </p>
+      </article>
+
+      <article class="card-hover p-6 rounded-2xl bg-ink-800 border border-paper/10">
+        <div class="flex items-center justify-between mb-3">
+          <div class="font-bold text-lg">Polaris Office AI</div>
+          <span class="text-xs px-2 py-0.5 rounded bg-paper/10 text-paper/70">041020</span>
+        </div>
+        <div class="text-xs text-paper/60 mb-3">办公 AI / 文档处理</div>
+        <dl class="space-y-2 text-sm">
+          <div class="flex justify-between"><dt class="text-paper/70">业务方向</dt><dd class="font-semibold text-right">AI 文档/笔记</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">用户人群</dt><dd class="font-semibold">职场专业人士</dd></div>
+          <div class="flex justify-between"><dt class="text-paper/70">业务相关度</dt><dd class="font-semibold">★★★★</dd></div>
+        </dl>
+        <p class="mt-3 pt-3 border-t border-paper/10 text-xs text-paper/70">
+          客户画像与 AI 录音笔重叠（律师、记者、咨询）。
+        </p>
+      </article>
+
+      <article class="card-hover p-6 rounded-2xl bg-ink-800 border border-paper/10">
+        <div class="flex items-center justify-between mb-3">
+          <div class="font-bold text-lg">硬件类对标</div>
+          <span class="text-xs px-2 py-0.5 rounded bg-paper/10 text-paper/70">多家</span>
+        </div>
+        <div class="text-xs text-paper/60 mb-3">韩国 AI/电子消费品 上市公司</div>
+        <ul class="space-y-1.5 text-sm text-paper/80">
+          <li>• <strong>Selvas Healthcare</strong>：医疗 AI 硬件</li>
+          <li>• <strong>Bitcomputer</strong>：医疗记录 AI</li>
+          <li>• <strong>Hancom MDS</strong>：嵌入式 AI</li>
+        </ul>
+        <p class="mt-3 pt-3 border-t border-paper/10 text-xs text-paper/70">
+          硬件 + AI 算法 + B2B 客户的复合体——可作为 IPO 比价池。
+        </p>
+      </article>
+
+    </div>
+
+    <!-- Valuation reference range -->
+    <div class="mt-12 p-8 rounded-3xl bg-coral-500 text-paper">
+      <p class="text-xs section-num text-paper/80 mb-3">VALUATION REFERENCE</p>
+      <p class="display text-2xl sm:text-3xl leading-tight mb-4">
+        参考同类 KOSDAQ 公司的估值区间：
+      </p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-6">
+        <div class="p-5 rounded-xl bg-paper/15 backdrop-blur">
+          <div class="text-xs section-num text-paper/80 mb-1">软件类 AI（Selvas AI / Saltlux）</div>
+          <div class="display text-3xl">$200M – $300M</div>
+          <p class="text-sm text-paper/85 mt-2">市值约 KRW 3,000–3,500 亿</p>
+        </div>
+        <div class="p-5 rounded-xl bg-ink-900/30 backdrop-blur ring-2 ring-paper/30">
+          <div class="text-xs section-num text-paper/80 mb-1">高成长 AI（Lunit / 医美材料）</div>
+          <div class="display text-3xl">$1B – $1.5B+</div>
+          <p class="text-sm text-paper/85 mt-2">市值 KRW 1.3 万亿 +</p>
+        </div>
+      </div>
+      <p class="mt-5 text-sm text-paper/85">
+        以上为已挂牌公司当前市值快照，仅作参考。具体新股上市估值由公模时点市场情绪、机构需求、增长曲线综合决定，可能高于或低于上述区间。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 9. CASE STUDY: 바이오비쥬 ======================== -->
+<section id="case" class="relative bg-paper">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <div class="flex items-baseline gap-4 mb-3">
+      <span class="section-num text-coral-500 text-sm">09</span>
+      <span class="text-ink-700 text-sm">Case Study</span>
+    </div>
+    <h2 class="display text-3xl sm:text-5xl mb-4">案例：바이오비쥬（BioBijou）</h2>
+    <p class="text-ink-700 max-w-3xl text-base sm:text-lg leading-relaxed">
+      2025 年 5 月在 KOSDAQ 挂牌的医美材料公司。这是一个完整的"成长期 + 技术特례 + 公模溢价"的样本——可作为同样规模、同样阶段的公司参考。
+    </p>
+
+    <!-- Profile + IPO mechanics -->
+    <div class="mt-10 grid lg:grid-cols-2 gap-5">
+      <article class="p-7 rounded-2xl bg-white border border-ink-900/10">
+        <div class="text-xs section-num text-coral-500 mb-3">公司画像</div>
+        <h3 class="text-xl font-bold mb-4 text-ink-900">바이오비쥬（489460）</h3>
+        <dl class="space-y-2.5 text-sm">
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">业务</dt><dd class="font-semibold text-right">HA 填充剂、童颜针、Skin Booster</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">成立</dt><dd class="font-semibold num">2018 年（清담글로벌系）</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">挂牌日期</dt><dd class="font-semibold num">2025-05-20</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">主承销商</dt><dd class="font-semibold">大信证券</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">3 年营收 CAGR</dt><dd class="font-semibold num text-coral-500">+50.2%</dd></div>
+          <div class="flex justify-between py-1.5"><dt class="text-ink-700">3 年营业利润 CAGR</dt><dd class="font-semibold num text-coral-500">+187%</dd></div>
+        </dl>
+      </article>
+
+      <article class="p-7 rounded-2xl bg-white border border-ink-900/10">
+        <div class="text-xs section-num text-coral-500 mb-3">公模过程</div>
+        <h3 class="text-xl font-bold mb-4 text-ink-900">需求预测＋公模数据</h3>
+        <dl class="space-y-2.5 text-sm">
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">期望区间</dt><dd class="font-semibold num">KRW 8,000 – 9,100</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">最终公模价</dt><dd class="font-semibold num text-coral-500">KRW 9,100（区间上限）</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">发行股数</dt><dd class="font-semibold num">300 万股（100% 新股）</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">融资规模</dt><dd class="font-semibold num">KRW 273 亿（≈ $20M）</dd></div>
+          <div class="flex justify-between border-b border-ink-900/8 py-1.5"><dt class="text-ink-700">挂牌后市值（公模价计）</dt><dd class="font-semibold num">KRW 1,369 亿（≈ $100M）</dd></div>
+          <div class="flex justify-between py-1.5"><dt class="text-ink-700">上市路径</dt><dd class="font-semibold">技术特례</dd></div>
+        </dl>
+      </article>
+    </div>
+
+    <!-- Stock price chart -->
+    <h3 class="mt-16 text-xl sm:text-2xl font-bold text-ink-900">挂牌后股价走势</h3>
+    <p class="text-sm text-ink-700 mt-1">数据点单位 KRW；横轴为相对挂牌日（D-Day）的时间</p>
+
+    <div class="mt-6 p-6 rounded-2xl bg-white border border-ink-900/10">
+      <div class="overflow-x-auto no-scrollbar">
+        <svg viewBox="0 0 720 280" class="w-full min-w-[640px]" xmlns="http://www.w3.org/2000/svg" aria-label="바이오비쥬 stock price chart">
+          <!-- Grid -->
+          <g stroke="#0B1733" stroke-opacity="0.06">
+            <line x1="60" y1="20" x2="60" y2="240"/>
+            <line x1="60" y1="240" x2="700" y2="240"/>
+            <line x1="60" y1="180" x2="700" y2="180" stroke-dasharray="2,4"/>
+            <line x1="60" y1="120" x2="700" y2="120" stroke-dasharray="2,4"/>
+            <line x1="60" y1="60" x2="700" y2="60" stroke-dasharray="2,4"/>
+          </g>
+          <!-- Y-axis labels -->
+          <g font-family="Inter,sans-serif" font-size="11" fill="#1E3168" text-anchor="end">
+            <text x="55" y="244">9,100</text>
+            <text x="55" y="184">15,000</text>
+            <text x="55" y="124">20,000</text>
+            <text x="55" y="64">26,200</text>
+          </g>
+          <!-- Offering price baseline label -->
+          <g font-family="Inter,sans-serif" font-size="10" fill="#0B1733" fill-opacity="0.5">
+            <text x="65" y="252">公模价 baseline</text>
+          </g>
+
+          <!-- Connecting line -->
+          <polyline fill="none" stroke="#F97357" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"
+                    points="100,240 180,75 260,60 340,138 420,115 500,128 580,131 660,125"/>
+
+          <!-- Filled area below line -->
+          <polygon fill="#F97357" fill-opacity="0.08" stroke="none"
+                   points="100,240 180,75 260,60 340,138 420,115 500,128 580,131 660,125 660,240 100,240"/>
+
+          <!-- Data points -->
+          <g>
+            <!-- IPO price (D-1, baseline) -->
+            <circle cx="100" cy="240" r="5" fill="#FAFAF7" stroke="#0B1733" stroke-width="2"/>
+            <text x="100" y="260" font-family="Inter,sans-serif" font-size="10" fill="#0B1733" text-anchor="middle">公模价</text>
+            <text x="100" y="272" font-family="Inter,sans-serif" font-size="9" fill="#0B1733" fill-opacity="0.6" text-anchor="middle">D-day 前</text>
+
+            <!-- Day 1 open: 23,000 -->
+            <circle cx="180" cy="75" r="5" fill="#F97357"/>
+            <text x="180" y="58" font-family="Inter,sans-serif" font-size="11" fill="#F97357" text-anchor="middle" font-weight="700">23,000</text>
+            <text x="180" y="260" font-family="Inter,sans-serif" font-size="10" fill="#0B1733" text-anchor="middle">首日开盘</text>
+            <text x="180" y="272" font-family="Inter,sans-serif" font-size="9" fill="#F97357" fill-opacity="0.85" text-anchor="middle">+152.7%</text>
+
+            <!-- Day 1 intraday peak: 26,200 -->
+            <circle cx="260" cy="60" r="6" fill="#F97357" stroke="#FAFAF7" stroke-width="2"/>
+            <text x="260" y="42" font-family="Inter,sans-serif" font-size="12" fill="#F97357" text-anchor="middle" font-weight="900">26,200</text>
+            <text x="260" y="260" font-family="Inter,sans-serif" font-size="10" fill="#0B1733" text-anchor="middle">首日盘中峰值</text>
+            <text x="260" y="272" font-family="Inter,sans-serif" font-size="9" fill="#F97357" fill-opacity="0.85" text-anchor="middle" font-weight="700">+187.9%</text>
+
+            <!-- Day 1 close: 18,380 -->
+            <circle cx="340" cy="138" r="5" fill="#F97357"/>
+            <text x="340" y="125" font-family="Inter,sans-serif" font-size="11" fill="#1E3168" text-anchor="middle" font-weight="700">18,380</text>
+            <text x="340" y="260" font-family="Inter,sans-serif" font-size="10" fill="#0B1733" text-anchor="middle">首日收盘</text>
+            <text x="340" y="272" font-family="Inter,sans-serif" font-size="9" fill="#0B1733" fill-opacity="0.6" text-anchor="middle">+102.0%</text>
+
+            <!-- Day 2: 19,910 -->
+            <circle cx="420" cy="115" r="4" fill="#F97357"/>
+            <text x="420" y="105" font-family="Inter,sans-serif" font-size="10" fill="#1E3168" text-anchor="middle">19,910</text>
+            <text x="420" y="260" font-family="Inter,sans-serif" font-size="10" fill="#0B1733" text-anchor="middle">D+1</text>
+
+            <!-- ~30 days: 19,490 -->
+            <circle cx="500" cy="128" r="4" fill="#F97357"/>
+            <text x="500" y="118" font-family="Inter,sans-serif" font-size="10" fill="#1E3168" text-anchor="middle">19,490</text>
+            <text x="500" y="260" font-family="Inter,sans-serif" font-size="10" fill="#0B1733" text-anchor="middle">~D+30</text>
+
+            <!-- Range marker for later months -->
+            <circle cx="580" cy="131" r="4" fill="#F97357" fill-opacity="0.7"/>
+            <text x="580" y="260" font-family="Inter,sans-serif" font-size="10" fill="#0B1733" text-anchor="middle">D+90</text>
+
+            <circle cx="660" cy="125" r="4" fill="#F97357" fill-opacity="0.7"/>
+            <text x="660" y="260" font-family="Inter,sans-serif" font-size="10" fill="#0B1733" text-anchor="middle">D+180</text>
+          </g>
+
+          <!-- "+100% band" annotation -->
+          <g>
+            <line x1="60" y1="138" x2="700" y2="138" stroke="#F97357" stroke-opacity="0.3" stroke-dasharray="4,4" stroke-width="1.5"/>
+            <text x="695" y="134" font-family="Inter,sans-serif" font-size="10" fill="#F97357" text-anchor="end" font-weight="600">公模价 +100%</text>
+          </g>
+        </svg>
+      </div>
+
+      <p class="mt-4 text-xs text-ink-700/70">
+        数据点：公模价 KRW 9,100 → 首日开盘 23,000（+152.7%）→ 盘中峰值 26,200（+187.9%）→ 首日收盘 18,380（+102.0%）→ D+1 收盘 19,910 → D+30 19,490。挂牌后约半年区间股价稳定在 KRW 18,000–20,000，较公模价维持 +100~120% 涨幅。
+      </p>
+    </div>
+
+    <!-- Takeaways -->
+    <h3 class="mt-12 text-xl sm:text-2xl font-bold text-ink-900">案例可观察到的几点</h3>
+    <div class="mt-6 grid md:grid-cols-2 gap-4">
+      <div class="p-5 rounded-xl bg-coral-500/8 border-l-4 border-coral-500">
+        <div class="text-xs section-num text-coral-500 mb-1">观察 ①</div>
+        <p class="text-sm text-ink-900 leading-relaxed">
+          <strong>公模价定在区间上限</strong>。需求预测阶段机构申购倍数较高，反映 2025 年 KOSDAQ IPO 市场对成长型公司接受度旺盛。
+        </p>
+      </div>
+      <div class="p-5 rounded-xl bg-coral-500/8 border-l-4 border-coral-500">
+        <div class="text-xs section-num text-coral-500 mb-1">观察 ②</div>
+        <p class="text-sm text-ink-900 leading-relaxed">
+          <strong>首日盘中超 +180%</strong>。这与 2025 年 KOSDAQ 整体首日均收益 142.9% 一致——市场对优质标的存在显著溢价。
+        </p>
+      </div>
+      <div class="p-5 rounded-xl bg-coral-500/8 border-l-4 border-coral-500">
+        <div class="text-xs section-num text-coral-500 mb-1">观察 ③</div>
+        <p class="text-sm text-ink-900 leading-relaxed">
+          <strong>挂牌后回归到 +100~120% 区间稳定</strong>。这是常见模式：首日峰值消化后，6-12 个月内股价依基本面重新定价，仍显著高于公模价。
+        </p>
+      </div>
+      <div class="p-5 rounded-xl bg-coral-500/8 border-l-4 border-coral-500">
+        <div class="text-xs section-num text-coral-500 mb-1">观察 ④</div>
+        <p class="text-sm text-ink-900 leading-relaxed">
+          <strong>挂牌路径是技术特례</strong>。公司 ARR 体量约 $50M、技术评级双 A——这个组合是 2025 年 KOSDAQ 上市最常见画像之一。
+        </p>
+      </div>
+    </div>
+
+    <!-- Comparison framing -->
+    <div class="mt-10 p-6 rounded-2xl bg-ink-900 text-paper">
+      <p class="text-xs section-num text-coral-500 mb-3">参考意义</p>
+      <p class="text-base sm:text-lg text-paper/90 leading-relaxed">
+        AI 录音笔/AI 硬件公司在<strong class="text-paper">营收规模、毛利率、技术属性、成长曲线</strong>上与바이오비쥬这类医美材料公司有相似画像。这并不意味着估值倍数完全可复制，但说明：
+        <strong class="text-coral-500">中等体量、技术驱动、增长可持续的公司</strong>，在 KOSDAQ 当前市场环境下有清晰的可参照样本。
+      </p>
+    </div>
+
+    <p class="mt-6 text-xs text-ink-700/70">
+      注：股价与市值数据来源 KRX KIND、Investing.com、Edaily Pharm、DealSite。本案例分析为公开数据整理，不构成证券推荐。
+    </p>
+  </div>
+</section>
+
+<!-- ======================== 10. FOREIGN ISSUER PATH ======================== -->
+<section id="foreign" class="relative bg-paper">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <div class="flex items-baseline gap-4 mb-3">
+      <span class="section-num text-coral-500 text-sm">10</span>
+      <span class="text-ink-700 text-sm">Foreign Issuer Path</span>
+    </div>
+    <h2 class="display text-3xl sm:text-5xl mb-4">境外公司在 KOSDAQ 的上市架构</h2>
+    <p class="text-ink-700 max-w-2xl text-base sm:text-lg leading-relaxed">
+      非韩国本地注册的公司，通常有三种架构选择。每种在执行难度、合规要求、上市时长上有显著差异。
+    </p>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-5">
+      <!-- Path A: 직상장 -->
+      <article class="p-6 rounded-2xl bg-white border border-ink-900/10">
+        <div class="text-xs section-num text-ink-700 mb-2">PATH A</div>
+        <h3 class="text-xl font-bold mb-3 text-ink-900">直接赴韩 IPO（外국기업 직상장）</h3>
+        <p class="text-sm text-ink-700 mb-4">中国/境外注册主体直接申请 KOSDAQ 上市。</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex items-start gap-2"><span class="text-ink-700/60 mt-1">•</span><span>需双 A 级技术评估（外企比内资门槛更高）</span></div>
+          <div class="flex items-start gap-2"><span class="text-ink-700/60 mt-1">•</span><span>会计准则、董事会、合规需对齐韩国要求</span></div>
+          <div class="flex items-start gap-2"><span class="text-ink-700/60 mt-1">•</span><span>2010s 后中国发행人审核更严格</span></div>
+        </div>
+        <div class="mt-4 pt-4 border-t border-ink-900/10 flex justify-between text-sm">
+          <span class="text-ink-700">执行难度</span>
+          <span class="font-semibold">★★★★★</span>
+        </div>
+      </article>
+
+      <!-- Path B: Korean entity -->
+      <article class="p-6 rounded-2xl bg-ink-900 text-paper shadow-glow relative">
+        <div class="absolute -top-3 left-6 px-3 py-1 rounded-full bg-coral-500 text-paper text-xs font-bold">实操最常见</div>
+        <div class="text-xs section-num text-coral-500 mb-2 mt-2">PATH B</div>
+        <h3 class="text-xl font-bold mb-3">韩国子公司 / 控股架构上市</h3>
+        <p class="text-sm text-paper/80 mb-4">
+          在韩设立运营/控股实体，作为 listing vehicle，最终由韩国主体上市。近年中资背景公司多采用此架构。
+        </p>
+        <div class="space-y-2 text-sm">
+          <div class="flex items-start gap-2"><span class="text-coral-500 mt-1">✓</span><span>享受韩国本地企业的全部上市便利</span></div>
+          <div class="flex items-start gap-2"><span class="text-coral-500 mt-1">✓</span><span>韩国本地营收支撑 IPO 故事</span></div>
+          <div class="flex items-start gap-2"><span class="text-coral-500 mt-1">✓</span><span>规避境外发행人额外审查</span></div>
+          <div class="flex items-start gap-2"><span class="text-coral-500 mt-1">✓</span><span>对接韩国 VC、战投资源更顺畅</span></div>
+        </div>
+        <div class="mt-4 pt-4 border-t border-paper/15 flex justify-between text-sm">
+          <span class="text-paper/70">执行难度</span>
+          <span class="font-semibold text-coral-500">★★★</span>
+        </div>
+      </article>
+
+      <!-- Path C: SPAC -->
+      <article class="p-6 rounded-2xl bg-white border border-ink-900/10">
+        <div class="text-xs section-num text-ink-700 mb-2">PATH C</div>
+        <h3 class="text-xl font-bold mb-3 text-ink-900">韩国 SPAC 合并</h3>
+        <p class="text-sm text-ink-700 mb-4">与已上市 SPAC 合并，6-9 个月可挂牌。</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex items-start gap-2"><span class="text-ink-700/60 mt-1">•</span><span>速度最快</span></div>
+          <div class="flex items-start gap-2"><span class="text-ink-700/60 mt-1">•</span><span>融资规模较小（典型 KRW 50-300 亿）</span></div>
+          <div class="flex items-start gap-2"><span class="text-ink-700/60 mt-1">•</span><span>需要找到合适 SPAC 壳</span></div>
+        </div>
+        <div class="mt-4 pt-4 border-t border-ink-900/10 flex justify-between text-sm">
+          <span class="text-ink-700">执行难度</span>
+          <span class="font-semibold">★★★</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- Historical context callout -->
+    <div class="mt-10 p-6 rounded-2xl bg-gold-500/10 border-l-4 border-gold-500">
+      <p class="text-xs section-num text-gold-500 mb-2">历史背景</p>
+      <p class="text-sm sm:text-base text-ink-900 leading-relaxed">
+        2010 年代初部分中国概念股在 KRX 出现财务造假事件后（如中国高纤等），KRX 对中国发행人的尽调与信息披露要求明显加严。这是为什么近年中资背景公司在 KOSDAQ 多采用"韩国本地实体 + 韩国本地营收 + 韩国本地董事会"的架构——制度成本相对清晰，审核通过率较高。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 10. TIMELINE ======================== -->
+<section id="timeline" class="relative bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <div class="flex items-baseline gap-4 mb-3">
+      <span class="section-num text-coral-500 text-sm">11</span>
+      <span class="text-ink-700 text-sm">Timeline</span>
+    </div>
+    <h2 class="display text-3xl sm:text-5xl mb-4">技术特례路径的典型时间线</h2>
+    <p class="text-ink-700 max-w-2xl text-base sm:text-lg leading-relaxed">
+      从启动到挂牌，技术特례路径的典型周期为 12–18 个月。下图为各阶段大致用时，实际进度因公司情况会有差异。
+    </p>
+
+    <!-- Timeline (vertical on mobile, horizontal on desktop) -->
+    <div class="mt-12">
+      <div class="space-y-6 md:space-y-0 md:grid md:grid-cols-5 md:gap-3">
+
+        <div class="relative md:pt-8">
+          <div class="hidden md:block absolute top-3 left-0 right-0 h-0.5 bg-ink-900/15"></div>
+          <div class="hidden md:block absolute top-1.5 left-0 w-3 h-3 rounded-full bg-coral-500 ring-4 ring-coral-500/20"></div>
+          <div class="md:hidden flex items-center gap-2 mb-2"><span class="w-2 h-2 rounded-full bg-coral-500"></span><span class="text-xs section-num text-coral-500">M1 – M3</span></div>
+          <div class="hidden md:block text-xs section-num text-coral-500 mb-2">M1 – M3</div>
+          <h3 class="font-bold text-ink-900 mb-2">阶段 1<br/>架构准备</h3>
+          <ul class="text-sm text-ink-700 space-y-1">
+            <li>• 韩国实体设立</li>
+            <li>• 财务/法律重组</li>
+            <li>• 业务韩国化启动</li>
+          </ul>
+        </div>
+
+        <div class="relative md:pt-8">
+          <div class="hidden md:block absolute top-1.5 left-0 w-3 h-3 rounded-full bg-coral-500 ring-4 ring-coral-500/20"></div>
+          <div class="md:hidden flex items-center gap-2 mb-2"><span class="w-2 h-2 rounded-full bg-coral-500"></span><span class="text-xs section-num text-coral-500">M3 – M6</span></div>
+          <div class="hidden md:block text-xs section-num text-coral-500 mb-2">M3 – M6</div>
+          <h3 class="font-bold text-ink-900 mb-2">阶段 2<br/>主承销商</h3>
+          <ul class="text-sm text-ink-700 space-y-1">
+            <li>• 主承销商招标 / 签约</li>
+            <li>• 法务/审计机构进场</li>
+            <li>• 技术评估准备</li>
+          </ul>
+        </div>
+
+        <div class="relative md:pt-8">
+          <div class="hidden md:block absolute top-1.5 left-0 w-3 h-3 rounded-full bg-coral-500 ring-4 ring-coral-500/20"></div>
+          <div class="md:hidden flex items-center gap-2 mb-2"><span class="w-2 h-2 rounded-full bg-coral-500"></span><span class="text-xs section-num text-coral-500">M6 – M9</span></div>
+          <div class="hidden md:block text-xs section-num text-coral-500 mb-2">M6 – M9</div>
+          <h3 class="font-bold text-ink-900 mb-2">阶段 3<br/>技术评级</h3>
+          <ul class="text-sm text-ink-700 space-y-1">
+            <li>• 2 家专业评估机构</li>
+            <li>• 目标双 A 级以上</li>
+            <li>• 业务韩国化加速</li>
+          </ul>
+        </div>
+
+        <div class="relative md:pt-8">
+          <div class="hidden md:block absolute top-1.5 left-0 w-3 h-3 rounded-full bg-coral-500 ring-4 ring-coral-500/20"></div>
+          <div class="md:hidden flex items-center gap-2 mb-2"><span class="w-2 h-2 rounded-full bg-coral-500"></span><span class="text-xs section-num text-coral-500">M9 – M14</span></div>
+          <div class="hidden md:block text-xs section-num text-coral-500 mb-2">M9 – M14</div>
+          <h3 class="font-bold text-ink-900 mb-2">阶段 4<br/>KRX 审核</h3>
+          <ul class="text-sm text-ink-700 space-y-1">
+            <li>• 예심청구 提交</li>
+            <li>• KRX 심사 互动</li>
+            <li>• 通常 3–6 个月</li>
+          </ul>
+        </div>
+
+        <div class="relative md:pt-8">
+          <div class="hidden md:block absolute top-1.5 left-0 w-3 h-3 rounded-full bg-coral-500 ring-4 ring-coral-500/40"></div>
+          <div class="md:hidden flex items-center gap-2 mb-2"><span class="w-2 h-2 rounded-full bg-coral-500 ring-4 ring-coral-500/30"></span><span class="text-xs section-num text-coral-500 font-bold">M14 – M18</span></div>
+          <div class="hidden md:block text-xs section-num text-coral-500 mb-2 font-bold">M14 – M18</div>
+          <h3 class="font-bold text-coral-500 mb-2">阶段 5<br/>公开发行+上市</h3>
+          <ul class="text-sm text-ink-700 space-y-1">
+            <li>• 证券申报</li>
+            <li>• 路演 + 询价</li>
+            <li>• <strong class="text-coral-500">挂牌敲钟</strong></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Key milestones note -->
+    <div class="mt-12 grid sm:grid-cols-3 gap-4">
+      <div class="p-5 rounded-xl bg-ink-900/5">
+        <div class="text-xs section-num text-ink-700 mb-1">关键里程碑 1</div>
+        <div class="font-semibold text-ink-900">韩国实体注册完成</div>
+        <p class="text-xs text-ink-700 mt-1">所有后续流程的前提</p>
+      </div>
+      <div class="p-5 rounded-xl bg-coral-500/8 border-l-4 border-coral-500">
+        <div class="text-xs section-num text-coral-500 mb-1">关键里程碑 2</div>
+        <div class="font-semibold text-ink-900">技术评级双 A 取得</div>
+        <p class="text-xs text-ink-700 mt-1">最大不确定性节点</p>
+      </div>
+      <div class="p-5 rounded-xl bg-ink-900/5">
+        <div class="text-xs section-num text-ink-700 mb-1">关键里程碑 3</div>
+        <div class="font-semibold text-ink-900">KRX 예심 通过</div>
+        <p class="text-xs text-ink-700 mt-1">距挂牌仅 2-3 个月</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== 11. CTA ======================== -->
+<!-- ⚠️ 编辑提示：把下方 [联系方式占位] 替换为你的微信/邮箱再发送给客户 -->
+<section id="cta" class="relative overflow-hidden bg-gradient-to-br from-ink-900 via-ink-800 to-ink-900 text-paper">
+  <div class="absolute inset-0 grid-bg opacity-[0.06] pointer-events-none"></div>
+  <div class="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-coral-500/15 blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-32 text-center">
+    <div class="text-xs section-num text-coral-500 mb-4">12 / CONTACT</div>
+    <h2 class="display text-4xl sm:text-6xl mb-6">
+      如需进一步交流。
+    </h2>
+    <p class="max-w-2xl mx-auto text-lg sm:text-xl text-paper/80 leading-relaxed">
+      本简报对韩国 KOSDAQ 资本市场做了基础整理。<br/>
+      若需进一步讨论某个具体环节——上市路径选择、技术评估准备、估值参照、架构设计——欢迎联系。
+    </p>
+
+    <div class="mt-12 grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+      <!-- ============================================== -->
+      <!-- ⚠️ 用户编辑区 #1：替换为你的微信二维码 -->
+      <!-- ============================================== -->
+      <div class="p-8 rounded-2xl bg-paper/10 backdrop-blur border border-paper/15">
+        <div class="text-xs section-num text-coral-500 mb-3">微信</div>
+        <div class="aspect-square max-w-[160px] mx-auto rounded-lg bg-paper/15 border-2 border-dashed border-paper/30 flex items-center justify-center text-paper/50 text-sm">
+          [二维码占位]
+        </div>
+        <p class="text-sm text-paper/70 mt-3">扫码添加微信</p>
+      </div>
+
+      <!-- ============================================== -->
+      <!-- ⚠️ 用户编辑区 #2：替换为你的邮箱/Telegram -->
+      <!-- ============================================== -->
+      <div class="p-8 rounded-2xl bg-paper/10 backdrop-blur border border-paper/15">
+        <div class="text-xs section-num text-coral-500 mb-3">邮箱</div>
+        <div class="font-semibold text-lg text-paper">[your-email@example.com]</div>
+        <p class="text-sm text-paper/70 mt-3">回复邮件预约 30 分钟视频会议</p>
+      </div>
+    </div>
+
+    <p class="mt-12 text-sm text-paper/60 max-w-xl mx-auto leading-relaxed">
+      本简报为前期市场研究材料，不构成投资建议。具体上市方案、估值、时间表，需基于贵公司实际情况单独评估。
+    </p>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer class="bg-paper border-t border-ink-900/8">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <div class="font-bold text-ink-900 mb-3">韩国 KOSDAQ 上市机会简报</div>
+        <p class="text-sm text-ink-700 leading-relaxed">
+          一份面向中国 AI 录音笔/AI 硬件公司的资本路径研究。<br/>
+          所有数据均来源于公开渠道，更新于 2025–2026。
+        </p>
+      </div>
+      <div>
+        <div class="text-xs section-num text-ink-700 mb-3">数据来源</div>
+        <ul class="text-xs text-ink-700 space-y-1.5 leading-relaxed">
+          <li>• <a class="hover:text-coral-500 underline-offset-2 hover:underline" href="https://kind.krx.co.kr/" target="_blank" rel="noopener">KRX KIND《2025 코스닥 상장심사 이해와 실무》</a></li>
+          <li>• <a class="hover:text-coral-500 underline-offset-2 hover:underline" href="https://www.koreaherald.com/article/10723169" target="_blank" rel="noopener">The Korea Herald — C-commerce in Korea</a></li>
+          <li>• <a class="hover:text-coral-500 underline-offset-2 hover:underline" href="https://stockanalysis.com/quote/kosdaq/108860/" target="_blank" rel="noopener">Stockanalysis — Selvas AI / Saltlux 市值</a></li>
+          <li>• <a class="hover:text-coral-500 underline-offset-2 hover:underline" href="https://sacra.com/c/plaud/" target="_blank" rel="noopener">Sacra — Plaud Revenue & Funding</a></li>
+          <li>• <a class="hover:text-coral-500 underline-offset-2 hover:underline" href="https://www.mordorintelligence.com/industry-reports/south-korea-ecommerce-market" target="_blank" rel="noopener">Mordor Intelligence — South Korea E-commerce Market 2025</a></li>
+          <li>• <a class="hover:text-coral-500 underline-offset-2 hover:underline" href="https://iron-cpa.com/kosdaq-delisting-tech-ipo-reform-2026/" target="_blank" rel="noopener">2026 KOSDAQ 制度改革解读（含技术特례扩容到 AI/能源/航天）</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-10 pt-6 border-t border-ink-900/8 flex flex-wrap justify-between gap-3 text-xs text-ink-700/60">
+      <div>© 2026 韩国 KOSDAQ 上市机会简报 — 仅供参考，不构成投资或法律建议</div>
+      <div class="flex gap-4">
+        <a href="#hero" class="hover:text-coral-500">回到顶部 ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reveal-on-scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('section > div').forEach((el) => { el.classList.add('reveal'); io.observe(el); });
+
+  // Sticky-nav active state
+  const navLinks = Array.from(document.querySelectorAll('nav .nav-link'));
+  const sections = navLinks.map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+  const navIo = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
+  sections.forEach(s => navIo.observe(s));
+</script>
+
+</body>
+</html>
