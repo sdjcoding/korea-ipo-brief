@@ -56,7 +56,7 @@ f_corner = font(36, bold=True)
 
 # Top tag pill
 tag_x, tag_y = 80, 80
-tag_text = "  韩国 KOSDAQ 资本市场观察"
+tag_text = "  韩国市场观察 · 2025–2026"
 tw = int(draw.textlength(tag_text, font=f_tag))
 draw.rounded_rectangle((tag_x, tag_y, tag_x + tw + 60, tag_y + 44), radius=22, fill=(250, 250, 247, 28))
 draw.ellipse((tag_x + 18, tag_y + 16, tag_x + 30, tag_y + 28), fill=CORAL)
@@ -64,18 +64,19 @@ draw.text((tag_x + 38, tag_y + 11), tag_text, font=f_tag, fill=PAPER)
 
 # Headline (3 lines)
 h_x, h_y = 80, 180
-draw.text((h_x, h_y), "活跃市场 · ", font=f_h1, fill=PAPER)
-draw.text((h_x, h_y + 100), "易上市 · ", font=f_h1, fill=PAPER)
-draw.text((h_x, h_y + 200), "高估值 ", font=f_h1, fill=PAPER)
-right_text_w = draw.textlength("高估值 ", font=f_h1)
-draw.text((h_x + right_text_w, h_y + 200), "案例", font=f_h1, fill=CORAL)
+draw.text((h_x, h_y), "韩国对中国 ", font=f_h1, fill=PAPER)
+left_w = draw.textlength("韩国对中国 ", font=f_h1)
+draw.text((h_x + left_w, h_y), "AI 公司，", font=f_h1, fill=CORAL)
+draw.text((h_x, h_y + 100), "既是收入市场，", font=f_h1, fill=PAPER)
+draw.text((h_x, h_y + 200), "也是资本市场。", font=f_h1, fill=PAPER)
 
 # Sub stats line
 sub_y = 540
 sub_parts = [
-    ("2025 公募收益 82.6%", CORAL),
-    ("（历史第二）  ·  案例 BioBijou 首日盘中 ", (250, 250, 247, 200)),
-    ("+187.9%", CORAL),
+    ("ChatGPT 付费用户全球 #2", CORAL),
+    ("  ·  ", (250, 250, 247, 200)),
+    ("KOSDAQ 2025 公募收益 82.6%", CORAL),
+    ("（历史第二）", (250, 250, 247, 200)),
 ]
 sx = 80
 for txt, color in sub_parts:
